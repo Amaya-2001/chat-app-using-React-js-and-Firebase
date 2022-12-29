@@ -2,7 +2,7 @@
 
 You can communicate with the registered users of the app by private message
 
-## Technologies
+### `Technologies`
 <p>
 <img src="https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png" width="150px" height="150px">
   
@@ -10,11 +10,11 @@ You can communicate with the registered users of the app by private message
 </p>
 The frontend is from react and the backend is from firebase
 ### `Features`
-Can chat with others.\
-Images can be shared with app registrants.\
+Can chat with others.<br>
+Images can be shared with app registrants.<br>
  
 ### `In the future`
-A way to share file attachments is being built.\
+A way to share file attachments is being built.<br>
 
 
 In the project directory, you can run:
