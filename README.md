@@ -5,8 +5,10 @@ You can communicate with the registered users of the app by private message
 ## Technologies
 <p>
 <img src="https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png" width="150px" height="150px">
+  
 <img src="https://user-images.githubusercontent.com/112056360/209935168-4349dbc6-747e-4db4-9b04-5ae685670f4f.png" width="150px" height="150px">
 </p>
+The frontend is from react and the backend is from firebase
 
 
 
