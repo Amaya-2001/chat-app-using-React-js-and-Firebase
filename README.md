@@ -3,7 +3,7 @@
 You can communicate with the registered users of the app by private message
 
 ## Technologies
-<img src="https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png" width="50px" height="25px">
+<img src="https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png" width="100px" height="100px">
 
 
 
