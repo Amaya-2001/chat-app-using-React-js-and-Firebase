@@ -9,7 +9,12 @@ You can communicate with the registered users of the app by private message
 <img src="https://user-images.githubusercontent.com/112056360/209935168-4349dbc6-747e-4db4-9b04-5ae685670f4f.png" width="150px" height="150px">
 </p>
 The frontend is from react and the backend is from firebase
+###Features
+Can chat with others
+Images can be shared with app registrants
 
+###In the future
+A way to share file attachments is being built
 
 
 In the project directory, you can run:
