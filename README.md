@@ -5,6 +5,8 @@ You can communicate with the registered users of the app by private message
 ## Technologies
 
 ![image](https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png)
+![image](https://user-images.githubusercontent.com/112056360/209933601-80ec3aa1-3180-42df-9a6d-f2dde0cd33ff.png)
+
 
 In the project directory, you can run:
 
