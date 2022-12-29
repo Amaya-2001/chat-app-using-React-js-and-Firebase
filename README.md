@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# Chat app using React and Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can communicate with the registered users of the app by private message
 
-## Available Scripts
+## Technologies
+
+![image](https://user-images.githubusercontent.com/112056360/209933437-4f1ebfb6-9fe6-44b8-b458-480f0043f9ff.png)
 
 In the project directory, you can run:
 
