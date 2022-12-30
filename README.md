@@ -1,7 +1,7 @@
 # Chat app using React and Firebase
 
 You can communicate with the registered users of the app by private message<br>
-You can get another idea by following the article<br>
+You can get proper idea by following the article<br>
 https://nonimi-ink.medium.com/chat-app-using-react-and-firebase-part-01-1d95db245cbe
 
 ### `Technologies`
@@ -12,9 +12,10 @@ https://nonimi-ink.medium.com/chat-app-using-react-and-firebase-part-01-1d95db24
 </p>
 The frontend is from react and the backend is from firebase<br>
 ### `Features`
+<p>
 Can chat with others.<br>
 Images can be shared with app registrants.<br>
- 
+ </p>
 ### `In the future`
 A way to share file attachments is being built.<br>
 
