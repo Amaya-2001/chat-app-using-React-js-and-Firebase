@@ -1,6 +1,8 @@
 # Chat app using React and Firebase
 
 You can communicate with the registered users of the app by private message
+You can get another idea by following the article
+https://nonimi-ink.medium.com/chat-app-using-react-and-firebase-part-01-1d95db245cbe
 
 ### `Technologies`
 <p>
