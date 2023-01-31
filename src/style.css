@@ -47,7 +47,8 @@
     cursor: pointer;
   }
   .formWrapper form label img {
-    width: 32px;
+    width: 55px;
+   height: 55px;
   }
   .formWrapper p {
     color: #5d5b8d;
@@ -161,7 +162,7 @@
  img{
     width:50px;
     height:50px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit:cover ;
 
 }
@@ -185,6 +186,7 @@
   .chat .chatIcons img {
     height: 50px;
     cursor: pointer;
+    border-radius:50%;
   }
   
 
@@ -252,7 +254,7 @@
     border: none;
     outline: none;
     color: #2f2d52;
-    font-size: 18px;
+    font-size: 15px;
   }
   .input input::placeholder {
     color: lightgray;
