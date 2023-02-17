@@ -15,18 +15,22 @@ import {
 import { db, storage } from "../Firebase";
 import { v4 as uuid } from "uuid";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { FaPaperclip} from 'react-icons/fa';
 
 const Input = () => {
   const [text, setText] = useState("");
-  const [img, setImg] = useState(null);
-
+  const [file, setFile] = useState(null);
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
 
+  const handleSendBtn = (e) =>{
+     e.code === "Enter" && handleSend();
+  }
   const handleSend = async () => {
-    if (img) {
+    if (file) {
       const storageRef = ref(storage, uuid());
-      const uploadTask = uploadBytesResumable(storageRef, img);
+
+      const uploadTask = uploadBytesResumable(storageRef, file);
       uploadTask.on(
         (error) => {
           //TODO:Handle Error
@@ -36,10 +40,12 @@ const Input = () => {
             await updateDoc(doc(db, "chats", data.chatId), {
               messages: arrayUnion({
                 id: uuid(),
-                text,
+                text: '',
+                fileName:file.name,
                 senderId: currentUser.uid,
                 date: Timestamp.now(),
-                img: downloadURL,
+                file: downloadURL,
+
               }),
             });
           });
@@ -69,30 +75,34 @@ const Input = () => {
       [data.chatId + ".date"]: serverTimestamp(),
     });
 
-    setText("");
-    setImg(null);
+
+    setFile(null);
+    setText("")
   };
+  const handleFileUpload = (e) =>{
+    console.log("file upload")
+    const selectedFile = e.target.files[0];
+    setFile(selectedFile);
+  }
 
   return (
     <div className="input">
       <input
         type="text"
-        placeholder="Type something..."
+        placeholder="write a message..."
+        onKeyDown={handleSendBtn}
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
+         <label className="file-input-label">
+      <input type="file" className="file-input" onChange={handleFileUpload} />
+      <FaPaperclip className="file-input-icon" />
+    </label>
       <div className="send">
-        <img src={atch} alt="" />
-        <input
-          type="file"
-          style={{ display: "none" }}
-          id="file"
-          onChange={(e) => setImg(e.target.files[0])}
-        />
-        <img src={Add} alt="" />
-        <label htmlFor="file"></label>
-        <button onClick={handleSend}>Send</button>
+
+      <button onClick={handleSend}>Send</button>
       </div>
+
     </div>
   );
 };

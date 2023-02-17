@@ -3,6 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import msg from "../images/download.jpg";
 import msgs from "../images/photo-1619532839116-af15d051cd3e.jpg";
 import { ChatContext } from "../context/ChatContext";
+import {FcDocument} from 'react-icons/fc'
 const Message = ({ message }) => {
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
@@ -31,8 +32,21 @@ const Message = ({ message }) => {
         <span>just now</span>
       </div>
       <div className="messageContent">
+      {
+        !message.file &&
         <p>{message.text}</p>
-        {message.img && <img src={message.img} alt="" />}
+      }
+       {
+          message.file &&(
+            <div>
+             <a href={message.file} target="_blank" rel="noreferrer" style={{fontSize: "72px"}} target="_blank"><FcDocument/>
+
+          </a>
+<span>{message.fileName}</span>
+</div>
+          )
+
+        }
       </div>
     </div>
   );

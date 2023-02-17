@@ -15,16 +15,15 @@ const Chat = () => {
     <div className="chat">
       <div className="chatInfo">
         <span>{data.user?.displayName}</span>
-        <div className="chatIcons">
-          <FaPhone
-            style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}
-          />
-          <FaVideo
-            style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}
-          />
-          <FaEllipsisV
-            style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}
-          />
+
+      <div className="chatIcons">
+
+           <FaPhone
+            style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}/>
+           <FaVideo
+             style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}/>
+           <FaEllipsisV
+           style={{ marginTop: "8px", marginRight: "5px", fontSize: "25px" }}/>
         </div>
       </div>
       <Messages></Messages>
